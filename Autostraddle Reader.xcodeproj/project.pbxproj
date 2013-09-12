@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE73953C17E228010087FA0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE73953B17E228010087FA0D /* UIKit.framework */; };
+		AE73953E17E228010087FA0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE73953D17E228010087FA0D /* Foundation.framework */; };
+		AE73954017E228010087FA0D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE73953F17E228010087FA0D /* CoreGraphics.framework */; };
+		AE73954617E228010087FA0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE73954417E228010087FA0D /* InfoPlist.strings */; };
+		AE73954817E228010087FA0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE73954717E228010087FA0D /* main.m */; };
+		AE73954C17E228010087FA0D /* ARAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE73954B17E228010087FA0D /* ARAppDelegate.m */; };
+		AE73954E17E228010087FA0D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AE73954D17E228010087FA0D /* Default.png */; };
+		AE73955017E228010087FA0D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE73954F17E228010087FA0D /* Default@2x.png */; };
+		AE73955217E228010087FA0D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE73955117E228010087FA0D /* Default-568h@2x.png */; };
+		AE73955517E228010087FA0D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE73955317E228010087FA0D /* MainStoryboard.storyboard */; };
+		AE73955817E228010087FA0D /* ARMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE73955717E228010087FA0D /* ARMasterViewController.m */; };
+		AE73955B17E228010087FA0D /* ARDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE73955A17E228010087FA0D /* ARDetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AE73953817E228010087FA0D /* Autostraddle Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Autostraddle Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE73953B17E228010087FA0D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AE73953D17E228010087FA0D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AE73953F17E228010087FA0D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AE73954317E228010087FA0D /* Autostraddle Reader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Autostraddle Reader-Info.plist"; sourceTree = "<group>"; };
+		AE73954517E228010087FA0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AE73954717E228010087FA0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE73954917E228010087FA0D /* Autostraddle Reader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Autostraddle Reader-Prefix.pch"; sourceTree = "<group>"; };
+		AE73954A17E228010087FA0D /* ARAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARAppDelegate.h; sourceTree = "<group>"; };
+		AE73954B17E228010087FA0D /* ARAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARAppDelegate.m; sourceTree = "<group>"; };
+		AE73954D17E228010087FA0D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		AE73954F17E228010087FA0D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		AE73955117E228010087FA0D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AE73955417E228010087FA0D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		AE73955617E228010087FA0D /* ARMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMasterViewController.h; sourceTree = "<group>"; };
+		AE73955717E228010087FA0D /* ARMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARMasterViewController.m; sourceTree = "<group>"; };
+		AE73955917E228010087FA0D /* ARDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARDetailViewController.h; sourceTree = "<group>"; };
+		AE73955A17E228010087FA0D /* ARDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARDetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE73953517E228010087FA0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE73953C17E228010087FA0D /* UIKit.framework in Frameworks */,
+				AE73953E17E228010087FA0D /* Foundation.framework in Frameworks */,
+				AE73954017E228010087FA0D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE73952F17E228010087FA0D = {
+			isa = PBXGroup;
+			children = (
+				AE73954117E228010087FA0D /* Autostraddle Reader */,
+				AE73953A17E228010087FA0D /* Frameworks */,
+				AE73953917E228010087FA0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE73953917E228010087FA0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE73953817E228010087FA0D /* Autostraddle Reader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE73953A17E228010087FA0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE73953B17E228010087FA0D /* UIKit.framework */,
+				AE73953D17E228010087FA0D /* Foundation.framework */,
+				AE73953F17E228010087FA0D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE73954117E228010087FA0D /* Autostraddle Reader */ = {
+			isa = PBXGroup;
+			children = (
+				AE73954A17E228010087FA0D /* ARAppDelegate.h */,
+				AE73954B17E228010087FA0D /* ARAppDelegate.m */,
+				AE73955317E228010087FA0D /* MainStoryboard.storyboard */,
+				AE73955617E228010087FA0D /* ARMasterViewController.h */,
+				AE73955717E228010087FA0D /* ARMasterViewController.m */,
+				AE73955917E228010087FA0D /* ARDetailViewController.h */,
+				AE73955A17E228010087FA0D /* ARDetailViewController.m */,
+				AE73954217E228010087FA0D /* Supporting Files */,
+			);
+			path = "Autostraddle Reader";
+			sourceTree = "<group>";
+		};
+		AE73954217E228010087FA0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE73954317E228010087FA0D /* Autostraddle Reader-Info.plist */,
+				AE73954417E228010087FA0D /* InfoPlist.strings */,
+				AE73954717E228010087FA0D /* main.m */,
+				AE73954917E228010087FA0D /* Autostraddle Reader-Prefix.pch */,
+				AE73954D17E228010087FA0D /* Default.png */,
+				AE73954F17E228010087FA0D /* Default@2x.png */,
+				AE73955117E228010087FA0D /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE73953717E228010087FA0D /* Autostraddle Reader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE73955E17E228010087FA0D /* Build configuration list for PBXNativeTarget "Autostraddle Reader" */;
+			buildPhases = (
+				AE73953417E228010087FA0D /* Sources */,
+				AE73953517E228010087FA0D /* Frameworks */,
+				AE73953617E228010087FA0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Autostraddle Reader";
+			productName = "Autostraddle Reader";
+			productReference = AE73953817E228010087FA0D /* Autostraddle Reader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE73953017E228010087FA0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AR;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Nicole Chung";
+			};
+			buildConfigurationList = AE73953317E228010087FA0D /* Build configuration list for PBXProject "Autostraddle Reader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AE73952F17E228010087FA0D;
+			productRefGroup = AE73953917E228010087FA0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE73953717E228010087FA0D /* Autostraddle Reader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE73953617E228010087FA0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE73954617E228010087FA0D /* InfoPlist.strings in Resources */,
+				AE73954E17E228010087FA0D /* Default.png in Resources */,
+				AE73955017E228010087FA0D /* Default@2x.png in Resources */,
+				AE73955217E228010087FA0D /* Default-568h@2x.png in Resources */,
+				AE73955517E228010087FA0D /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE73953417E228010087FA0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE73954817E228010087FA0D /* main.m in Sources */,
+				AE73954C17E228010087FA0D /* ARAppDelegate.m in Sources */,
+				AE73955817E228010087FA0D /* ARMasterViewController.m in Sources */,
+				AE73955B17E228010087FA0D /* ARDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE73954417E228010087FA0D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE73954517E228010087FA0D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AE73955317E228010087FA0D /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE73955417E228010087FA0D /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE73955C17E228010087FA0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AE73955D17E228010087FA0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE73955F17E228010087FA0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Autostraddle Reader/Autostraddle Reader-Prefix.pch";
+				INFOPLIST_FILE = "Autostraddle Reader/Autostraddle Reader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AE73956017E228010087FA0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Autostraddle Reader/Autostraddle Reader-Prefix.pch";
+				INFOPLIST_FILE = "Autostraddle Reader/Autostraddle Reader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE73953317E228010087FA0D /* Build configuration list for PBXProject "Autostraddle Reader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE73955C17E228010087FA0D /* Debug */,
+				AE73955D17E228010087FA0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE73955E17E228010087FA0D /* Build configuration list for PBXNativeTarget "Autostraddle Reader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE73955F17E228010087FA0D /* Debug */,
+				AE73956017E228010087FA0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE73953017E228010087FA0D /* Project object */;
+}
