@@ -9,43 +9,63 @@
 #import "ARMasterViewController.h"
 
 #import "ARDetailViewController.h"
+#import "ARTableHeaderView.h"
+#import "ARRSSLoader.h"
+#import "ARRSSItem.h"
 
 @interface ARMasterViewController () {
-    NSMutableArray *_objects;
+    NSArray *_objects;
+    NSURL* feedURL;
+    UIRefreshControl* refreshControl;
 }
 @end
 
 @implementation ARMasterViewController
 
-- (void)awakeFromNib
-{
-    [super awakeFromNib];
-}
-
-- (void)viewDidLoad
+-(void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
-
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
+    
+    // configuration
+    self.title = @"Autostraddle";
+    feedURL = [NSURL URLWithString:@"http://www.autostraddle.com/feed/"];
+    
+    // add refresh control to the table view
+    refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:self
+                       action:@selector(refreshInvoked:forState:)
+             forControlEvents:UIControlEventValueChanged];
+    NSString* fetchMessage = [NSString stringWithFormat:@"Fetching: %@", feedURL];
+    
+    refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:fetchMessage attributes:@{NSFontAttributeName:[UIFont fontWithName:@"Helvetica" size:11.0]}];
+    
+    [self.tableView addSubview: refreshControl];
+    
+    // add the header
+    self.tableView.tableHeaderView = [[ARTableHeaderView alloc]initWithText:@"fetching rss feed"];
+    
+    [self refreshFeed];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void) refreshInvoked:(id)sender forState:(UIControlState)state {
+    [self refreshFeed];
 }
 
-- (void)insertNewObject:(id)sender
+-(void)refreshFeed
 {
-    if (!_objects) {
-        _objects = [[NSMutableArray alloc] init];
-    }
-    [_objects insertObject:[NSDate date] atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    ARRSSLoader *rss = [[ARRSSLoader alloc] init];
+    [rss fetchRSSWithURL:feedURL complete:^(NSString *title, NSArray *results)  {
+        // complete fetching the RSS
+        dispatch_async(dispatch_get_main_queue(), ^{
+            // UI Code on the main queue
+            [(ARTableHeaderView*) self.tableView.tableHeaderView setText:title];
+            _objects = results;
+            [self.tableView reloadData];
+            
+            // Stop refresh control
+            [refreshControl endRefreshing];
+        });
+    }];
 }
 
 #pragma mark - Table View
@@ -69,37 +89,7 @@
     return cell;
 }
 
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
 
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [_objects removeObjectAtIndex:indexPath.row];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-    }
-}
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {

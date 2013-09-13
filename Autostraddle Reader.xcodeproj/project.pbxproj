@@ -19,6 +19,14 @@
 		AE73955517E228010087FA0D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE73955317E228010087FA0D /* MainStoryboard.storyboard */; };
 		AE73955817E228010087FA0D /* ARMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE73955717E228010087FA0D /* ARMasterViewController.m */; };
 		AE73955B17E228010087FA0D /* ARDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE73955A17E228010087FA0D /* ARDetailViewController.m */; };
+		AE73956717E228250087FA0D /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = AE73956317E228250087FA0D /* GTMNSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AE73956817E228250087FA0D /* RXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = AE73956617E228250087FA0D /* RXMLElement.m */; };
+		AE73956C17E228820087FA0D /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AE73956A17E228820087FA0D /* libxml2.dylib */; };
+		AE73956E17E228A80087FA0D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AE73956D17E228A80087FA0D /* libz.dylib */; };
+		AE73957117E22B750087FA0D /* ARTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE73957017E22B750087FA0D /* ARTableHeaderView.m */; };
+		AE9DE2C217E257B600CA60E7 /* arss_header.png in Resources */ = {isa = PBXBuildFile; fileRef = AE9DE2C117E257B600CA60E7 /* arss_header.png */; };
+		AE9DE2C517E258B100CA60E7 /* ARRSSLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9DE2C417E258B100CA60E7 /* ARRSSLoader.m */; };
+		AE9DE2C817E258C300CA60E7 /* ARRSSItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9DE2C717E258C300CA60E7 /* ARRSSItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +48,20 @@
 		AE73955717E228010087FA0D /* ARMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARMasterViewController.m; sourceTree = "<group>"; };
 		AE73955917E228010087FA0D /* ARDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARDetailViewController.h; sourceTree = "<group>"; };
 		AE73955A17E228010087FA0D /* ARDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARDetailViewController.m; sourceTree = "<group>"; };
+		AE73956217E228250087FA0D /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		AE73956317E228250087FA0D /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		AE73956517E228250087FA0D /* RXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXMLElement.h; sourceTree = "<group>"; };
+		AE73956617E228250087FA0D /* RXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXMLElement.m; sourceTree = "<group>"; };
+		AE73956917E228820087FA0D /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		AE73956A17E228820087FA0D /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		AE73956D17E228A80087FA0D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		AE73956F17E22B750087FA0D /* ARTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTableHeaderView.h; sourceTree = "<group>"; };
+		AE73957017E22B750087FA0D /* ARTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTableHeaderView.m; sourceTree = "<group>"; };
+		AE9DE2C117E257B600CA60E7 /* arss_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arss_header.png; sourceTree = "<group>"; };
+		AE9DE2C317E258B100CA60E7 /* ARRSSLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARRSSLoader.h; sourceTree = "<group>"; };
+		AE9DE2C417E258B100CA60E7 /* ARRSSLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARRSSLoader.m; sourceTree = "<group>"; };
+		AE9DE2C617E258C300CA60E7 /* ARRSSItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARRSSItem.h; sourceTree = "<group>"; };
+		AE9DE2C717E258C300CA60E7 /* ARRSSItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARRSSItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE73956E17E228A80087FA0D /* libz.dylib in Frameworks */,
+				AE73956C17E228820087FA0D /* libxml2.dylib in Frameworks */,
 				AE73953C17E228010087FA0D /* UIKit.framework in Frameworks */,
 				AE73953E17E228010087FA0D /* Foundation.framework in Frameworks */,
 				AE73954017E228010087FA0D /* CoreGraphics.framework in Frameworks */,
@@ -59,6 +83,10 @@
 		AE73952F17E228010087FA0D = {
 			isa = PBXGroup;
 			children = (
+				AE73956D17E228A80087FA0D /* libz.dylib */,
+				AE9DE2C117E257B600CA60E7 /* arss_header.png */,
+				AE73956917E228820087FA0D /* libxml2.2.dylib */,
+				AE73956A17E228820087FA0D /* libxml2.dylib */,
 				AE73954117E228010087FA0D /* Autostraddle Reader */,
 				AE73953A17E228010087FA0D /* Frameworks */,
 				AE73953917E228010087FA0D /* Products */,
@@ -86,6 +114,14 @@
 		AE73954117E228010087FA0D /* Autostraddle Reader */ = {
 			isa = PBXGroup;
 			children = (
+				AE9DE2C617E258C300CA60E7 /* ARRSSItem.h */,
+				AE9DE2C717E258C300CA60E7 /* ARRSSItem.m */,
+				AE9DE2C317E258B100CA60E7 /* ARRSSLoader.h */,
+				AE9DE2C417E258B100CA60E7 /* ARRSSLoader.m */,
+				AE73956F17E22B750087FA0D /* ARTableHeaderView.h */,
+				AE73957017E22B750087FA0D /* ARTableHeaderView.m */,
+				AE73956117E228250087FA0D /* GTMNSString+HTML */,
+				AE73956417E228250087FA0D /* RaptureXML */,
 				AE73954A17E228010087FA0D /* ARAppDelegate.h */,
 				AE73954B17E228010087FA0D /* ARAppDelegate.m */,
 				AE73955317E228010087FA0D /* MainStoryboard.storyboard */,
@@ -110,6 +146,24 @@
 				AE73955117E228010087FA0D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE73956117E228250087FA0D /* GTMNSString+HTML */ = {
+			isa = PBXGroup;
+			children = (
+				AE73956217E228250087FA0D /* GTMNSString+HTML.h */,
+				AE73956317E228250087FA0D /* GTMNSString+HTML.m */,
+			);
+			path = "GTMNSString+HTML";
+			sourceTree = "<group>";
+		};
+		AE73956417E228250087FA0D /* RaptureXML */ = {
+			isa = PBXGroup;
+			children = (
+				AE73956517E228250087FA0D /* RXMLElement.h */,
+				AE73956617E228250087FA0D /* RXMLElement.m */,
+			);
+			path = RaptureXML;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +223,7 @@
 				AE73955017E228010087FA0D /* Default@2x.png in Resources */,
 				AE73955217E228010087FA0D /* Default-568h@2x.png in Resources */,
 				AE73955517E228010087FA0D /* MainStoryboard.storyboard in Resources */,
+				AE9DE2C217E257B600CA60E7 /* arss_header.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +238,11 @@
 				AE73954C17E228010087FA0D /* ARAppDelegate.m in Sources */,
 				AE73955817E228010087FA0D /* ARMasterViewController.m in Sources */,
 				AE73955B17E228010087FA0D /* ARDetailViewController.m in Sources */,
+				AE73956717E228250087FA0D /* GTMNSString+HTML.m in Sources */,
+				AE73956817E228250087FA0D /* RXMLElement.m in Sources */,
+				AE73957117E22B750087FA0D /* ARTableHeaderView.m in Sources */,
+				AE9DE2C517E258B100CA60E7 /* ARRSSLoader.m in Sources */,
+				AE9DE2C817E258C300CA60E7 /* ARRSSItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +329,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Autostraddle Reader/Autostraddle Reader-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "Autostraddle Reader/Autostraddle Reader-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -280,6 +341,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Autostraddle Reader/Autostraddle Reader-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "Autostraddle Reader/Autostraddle Reader-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -305,6 +367,7 @@
 				AE73956017E228010087FA0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
